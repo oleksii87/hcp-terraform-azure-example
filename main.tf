@@ -3,9 +3,9 @@ provider "azurerm" {
 }
 
 locals {
-  base_name = "${var.prefix}hcp-vcs"
+  base_name = "${var.prefix}hcp-vcs-${var.environment}"
   common_tags = {
-    Environment = "Lab"
+    Environment = var.environment
     Owner = var.prefix
   }
 }

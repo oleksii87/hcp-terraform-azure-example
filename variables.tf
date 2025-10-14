@@ -14,3 +14,8 @@ variable "location" {
   description = "(Optional) Region for Azure resources, defaults to East US."
   default     = "eastus"
 }
+
+variable "environment" {
+  type = string
+  description = "(Required) Environment tag for resources."
+}
