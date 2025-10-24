@@ -6,7 +6,8 @@ locals {
   base_name = "${var.prefix}hcp-vcs-${var.environment}"
   common_tags = {
     Environment = var.environment
-    Owner = var.prefix
+    Owner       = var.prefix
+    Project     = "8675309"
   }
 }
 
