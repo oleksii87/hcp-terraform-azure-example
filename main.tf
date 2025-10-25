@@ -7,7 +7,7 @@ locals {
   common_tags = {
     Environment = var.environment
     Owner       = var.prefix
-    Project     = "867530911"
+    Project     = "8675309111"
   }
 }
 
